@@ -55,12 +55,6 @@ ul,ol{margin:0;padding:0;list-style:none}
 .fields ul{display:flex;flex-wrap:wrap;gap:6px 20px}
 .fields li{display:inline-flex;align-items:baseline;gap:5px;font-size:16px;font-weight:500;line-height:1.6}
 .fields li::before{content:"#";font-family:var(--display);font-weight:700;color:var(--green-bright)}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-top:64px}
-.facts li{padding:22px 20px 0 0;margin-right:20px;border-right:1px solid var(--line)}
-.facts li:last-child{border-right:0;margin-right:0}
-.facts .v{font-family:var(--display);font-weight:700;font-size:30px;color:var(--ku-green);letter-spacing:-.02em;line-height:1.1}
-.facts .v small{font-family:var(--body);font-size:14px;font-weight:600;margin-left:6px;color:var(--ink)}
-.facts .l{font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.5}
 
 /* 교육목표 */
 .goals{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.22)}
@@ -112,8 +106,6 @@ ul,ol{margin:0;padding:0;list-style:none}
   .about,.greet,.loc{grid-template-columns:1fr;gap:40px}
   .goals{grid-template-columns:1fr 1fr}
   .goals li:nth-child(2n){border-right:0;margin-right:0}
-  .facts{grid-template-columns:1fr 1fr;row-gap:8px}
-  .facts li:nth-child(2n){border-right:0;margin-right:0}
   .sec-head{grid-template-columns:1fr;gap:12px}
 }
 @media (max-width:560px){
@@ -156,12 +148,6 @@ ul,ol{margin:0;padding:0;list-style:none}
         </ul>
       </div>
     </div>
-    <ul class="facts">
-      <li><p class="v">1956<small>년</small></p><p class="l">상학과로 출발한 학과의 역사</p></li>
-      <li><p class="v">AACSB</p><p class="l">국제경영대학발전협의회 인증</p></li>
-      <li><p class="v">KABEA</p><p class="l">한국경영교육인증원 인증</p></li>
-      <li><p class="v">7<small>개 전공 분야</small></p><p class="l">인사조직부터 경영정보까지</p></li>
-    </ul>
   </div>
 </section>
 
