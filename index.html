@@ -40,7 +40,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .sec.tint{background:var(--ground)}
 .sec.band{background:#E6EFE9;color:var(--ink)}
 .sec-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 56px;align-items:end;margin-bottom:48px}
-.sec-head h2{font-size:clamp(28px,3.2vw,38px);letter-spacing:-.02em}
+.eyebrow{font-family:var(--display);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--green-bright)}
+.sec-head h2{font-size:clamp(28px,3.2vw,38px);letter-spacing:-.02em;margin-top:8px}
 
 /* 학과소개 */
 .about{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:64px;align-items:start}
@@ -120,6 +121,7 @@ ul,ol{margin:0;padding:0;list-style:none}
   <div class="wrap">
     <div class="sec-head">
       <div>
+        <p class="eyebrow">About</p>
         <h2>학과소개</h2>
       </div>
     </div>
@@ -148,6 +150,7 @@ ul,ol{margin:0;padding:0;list-style:none}
   <div class="wrap">
     <div class="sec-head">
       <div>
+        <p class="eyebrow">Educational Goals</p>
         <h2>교육목표</h2>
       </div>
     </div>
@@ -163,6 +166,11 @@ ul,ol{margin:0;padding:0;list-style:none}
 <!-- 3. 인사말 (학과장 소개·상담 안내 포함) -->
 <section class="sec tint" id="greeting">
   <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Greeting</p>
+      </div>
+    </div>
     <div class="greet">
       <div class="chairs">
         <article class="chair">
@@ -209,6 +217,7 @@ ul,ol{margin:0;padding:0;list-style:none}
   <div class="wrap">
     <div class="sec-head">
       <div>
+        <p class="eyebrow">Location</p>
         <h2>찾아오시는길</h2>
       </div>
     </div>
