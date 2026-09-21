@@ -83,6 +83,16 @@ ul,ol{margin:0;padding:0;list-style:none}
 .sign{margin-top:36px;padding-top:20px;border-top:1px solid var(--line-strong);font-size:14px;color:var(--ink-2)}
 .sign b{display:block;font-family:var(--display);font-weight:700;font-size:17px;color:var(--ink);margin-top:2px}
 
+/* 관련 웹사이트 */
+.sites{padding-bottom:0}
+.sites h2{font-size:20px;letter-spacing:-.01em;margin-bottom:16px}
+.sitelinks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.sitelinks a{position:relative;display:grid;gap:2px;padding:18px 20px;border:1px solid var(--line-strong);background:var(--surface);transition:border-color .15s}
+.sitelinks a::after{content:"↗";position:absolute;right:16px;top:15px;color:var(--green-bright);font-size:14px}
+.sitelinks a:hover{border-color:var(--ku-green)}
+.sitelinks b{font-family:var(--display);font-weight:700;font-size:17px}
+.sitelinks span{font-size:13px;color:var(--ink-3)}
+@media (max-width:760px){.sitelinks{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* 찾아오시는길 */
 .loc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start}
 .addr{border-top:1px solid var(--ink);padding-top:20px;margin-bottom:28px}
@@ -201,7 +211,20 @@ ul,ol{margin:0;padding:0;list-style:none}
   </div>
 </section>
 
-<!-- 4. 찾아오시는길 -->
+<!-- 4. 관련 웹사이트 -->
+<section class="sec sites" id="sites">
+  <div class="wrap">
+    <h2>관련 웹사이트</h2>
+    <ul class="sitelinks">
+    <li><a href="https://kbs.konkuk.ac.kr" target="_blank" rel="noopener"><b>경영대학</b><span>kbs.konkuk.ac.kr</span></a></li>
+      <li><a href="https://mot.konkuk.ac.kr" target="_blank" rel="noopener"><b>기술경영학과</b><span>mot.konkuk.ac.kr</span></a></li>
+      <li><a href="https://mba.konkuk.ac.kr" target="_blank" rel="noopener"><b>MBA</b><span>mba.konkuk.ac.kr</span></a></li>
+      <li><a href="https://grad.konkuk.ac.kr" target="_blank" rel="noopener"><b>일반대학원</b><span>grad.konkuk.ac.kr</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. 찾아오시는길 -->
 <section class="sec" id="location">
   <div class="wrap">
     <div class="loc">
